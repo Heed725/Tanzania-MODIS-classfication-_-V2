@@ -1,0 +1,21 @@
+GIMP Palette
+Name: LandCover_Tanzania
+Columns: 3
+#
+0 80 0 Evergreen_Needleleaf_Forest
+0 128 0 Evergreen_Broadleaf_Forest
+0 140 0 Deciduous_Needleleaf_Forest
+0 160 0 Deciduous_Broadleaf_Forest
+112 192 112 Mixed_Forests
+165 112 112 Closed_Shrublands
+232 192 128 Open_Shrublands
+160 160 0 Woody_Savannas
+200 220 112 Savannas
+232 192 0 Grasslands
+0 88 208 Permanent_Wetlands
+255 255 0 Croplands
+255 0 0 Urban_and_Built-Up
+160 144 80 Cropland_Natural_Vegetation_Mosaic
+240 216 216 Snow_and_Ice
+216 216 216 Barren_or_Sparsely_Vegetated
+176 208 224 Water_Bodies
