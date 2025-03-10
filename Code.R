@@ -6,10 +6,10 @@ library(ggplot2)
 library(dplyr)
 
 # Read the boundary shapefile for Tanzania
-map_boundary <- st_read("C:/Tanzania.shp")
+map_boundary <- st_read("C:/.../Tanzania.shp")
 
 # Read the land cover raster data
-IGBP_raster <- rast("C:/Tanzania.tif")
+IGBP_raster <- rast("C:/.../Tanzania.tif")
 
 # Transform raster to WGS84
 IGBP_raster <- project(IGBP_raster, "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs")
