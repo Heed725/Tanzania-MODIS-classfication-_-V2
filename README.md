@@ -23,12 +23,16 @@ library(dplyr)
 
 ### Load Tanzania Boundary Shapefile
 
+The vector data is obtained from [GADM](https://gadm.org) at ADM 1 level.
+
 ```r
 map_boundary <- st_read("C:/.../Tanzania.shp")
 ```
 Ensure that the file path is correct and the shapefile is available.
 
 ### Load Land Cover Raster Data
+
+The raster data is downloaded from [NASA AppEEARS](https://appeears.earthdatacloud.nasa.gov/).
 
 ```r
 IGBP_raster <- rast("C:/.../Tanzania.tif")
@@ -129,16 +133,18 @@ ggplot() +
 
 - **Legend Placement:** You may adjust the legend position to improve readability:
 
-  ```r<img width="616" alt="LandCover_Tanzania_2" src="https://github.com/user-attachments/assets/904641ca-e4ce-46e6-b097-02c8a78a1fa4" />
-
+  ```r
   theme(legend.position = "bottom")
   ```
-  ## Final Image
 
-<img width="1800" alt="LandCover_Tanzania_2" src="https://github.com/user-attachments/assets/8a621682-082c-4dd1-820c-6b7630496d2c" />
+## Final Image
+
+![Land Cover Map](https://github.com/user-attachments/assets/8a621682-082c-4dd1-820c-6b7630496d2c)
 
 This concludes the tutorial on land cover classification in Tanzania using R. 🎉 Happy coding!
 
 ## Credit
-https://rspatialdata.github.io/index.html
+- Vector Data: [GADM](https://gadm.org) (ADM 1 Level)
+- Raster Data: [NASA AppEEARS](https://appeears.earthdatacloud.nasa.gov/)
+- Spatial Data Processing: [R Spatial Data](https://rspatialdata.github.io/index.html)
 
